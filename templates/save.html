@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="refresh" content="1; URL={{ url_for('index') }}">
+        <title>qrLabs</title>
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"
+            type="text/css" />
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='icone.png') }}" />
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="{{ url_for('index') }}">qrLabs</a></h1>
+        </header>
+        <section>
+            <h1>SAISIE {{ result }} </h1>
+        </section>
+    </body>
+    <script>document.execCommand('ClearAuthenticationCache', 'false');</script>
+</html>
+
+

@@ -1,0 +1,103 @@
+html {
+    background-image: url("img/fancy-pants.jpg");
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+header {
+    display:block;
+    background:#cccccc;
+    color:#fff;
+    background-image: url("img/science.png");
+    border-radius: 4px;
+    border: 2px solid yellow;
+    height: 80px;
+}
+
+header h1 {
+    line-height: 80px;
+    margin: 0 0 0 50px;
+    display:inline;
+    font-weight: bold;
+    font-size: 40px;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding:5px 10px 5px 10px;
+    background-image: url("img/grey_wash_wall.png");
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+section h1 {
+    font-size: 35px;
+    margin-left: 40px;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    border: 2px solid yellow;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    text-align: left;
+    background-image: url("img/grey_wash_wall.png");
+    color: white;
+}
+
+td {
+    background-image: url("img/squared_metal.png");
+}
+
+.courses {
+    max-height: 500px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.bloc {
+    background-color: lightgray;
+    border-radius: 4px;
+    padding: 20px;
+    border: 2px solid yellow;
+}
+
+.nombre, .button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.button {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    background-image: url("img/grey_wash_wall.png");
+    border: none;
+    margin: 30px;
+}
+
+.nombre {
+    border: 2px solid black;
+}
+
+.bloc li {
+    font-size: 25px;
+}

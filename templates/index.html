@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>qrLabs</title>
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"
+            type="text/css" />
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='icone.png') }}" />
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="{{ url_for('index') }}">qrLabs</a></h1>
+        </header>
+        <section>
+            <h1>LIST DES COURSES</h1>
+            <div class="courses">
+                <table style="width:100%">
+                    <tr>
+                        <th>DATE</th>
+                        <th>LIEU</th>
+                        <th>NOMBRE ECHANTILLONS</th>
+                    </tr>
+                    {% for course in courses %}
+                    <tr>
+                        <td>{{ course[0] }}</td>
+                        <td>{{ course[1] }}</td>
+                        <td>{{ course[2] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <form method="POST" enctype="multipart/form-data" action="{{ url_for('export') }}">
+                <input class="button" class="sauver" type="submit" value="SAUVER">
+            </form>
+        </section>
+    </body>
+</html>
