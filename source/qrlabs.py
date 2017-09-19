@@ -106,7 +106,7 @@ def export_courses():
 
 
 app = Flask(__name__)
-UPLOAD_FOLDER = '/home/romain/Documents/workspace/qrlabs/'
+UPLOAD_FOLDER = '/root/qrlabs'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
