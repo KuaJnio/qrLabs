@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian
 
-ENTRYPOINT ["/usr/bin/python", "qrlabs.py"]
+ENTRYPOINT ["/usr/bin/python", "-u", "qrlabs.py"]
 
 WORKDIR /root/qrlabs
 
