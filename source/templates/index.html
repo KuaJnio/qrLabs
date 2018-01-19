@@ -19,13 +19,21 @@
                     <tr>
                         <th>DATE</th>
                         <th>LIEU</th>
-                        <th>NOMBRE ECHANTILLONS</th>
+                        <th>LABO</th>
+                        <th>COURSIER</th>
+                        <th>NB TOTAL</th>
+                        <th>SANGUINS</th>
+                        <th>AUTRES</th>
                     </tr>
                     {% for course in courses %}
                     <tr>
                         <td>{{ course[0] }}</td>
                         <td>{{ course[1] }}</td>
                         <td>{{ course[2] }}</td>
+                        <td>{{ course[3] }}</td>
+                        <td>{{ course[4] }}</td>
+                        <td>{{ course[5] }}</td>
+                        <td>{{ course[6] }}</td>
                     </tr>
                     {% endfor %}
                 </table>

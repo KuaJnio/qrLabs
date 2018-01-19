@@ -20,3 +20,5 @@ ajout d'un menu pour afficher les valeurs d'un jour précis
 ajout d'un envoi par mois par mail de toutes les valeurs (le 1 ou 2 du mois avec les valeurs du mois passé)
 
 page plus ergonomique sur le mobile
+
+DATE +1h export
